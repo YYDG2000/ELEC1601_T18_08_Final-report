@@ -2,4 +2,4 @@
 Code Part of team ELEC1601_T18_08 's final project
 
 This project includes 3 Versions of code of team T18_8
-This project has 5 branches please read them all
+This project has 6 branches please read them all
