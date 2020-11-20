@@ -72,7 +72,7 @@ void setup()
     pinMode(11, OUTPUT);                         // Set Buzzer
     pinMode(4, OUTPUT);                         // Set LED
 
-    int light_sensor = A0；
+    int light_sensor = A0
     int count = 0;
 
     //  Check whether Master and Slave are already connected by polling the ConnStatus pin (A1 on SeeedStudio v1 shield)
@@ -100,10 +100,10 @@ void setup()
 void loop()
 {
     char recvChar;
-    
+    count ++;
+
     while(1)
     {
-        count ++;
         if (count % 1200 == 0){
             if(blueToothSerial.available())   // Check if there's any data sent from the remote Bluetooth shield
             {
@@ -181,7 +181,7 @@ void loop()
                         servoLeft.writeMicroseconds(1680);
                         servoRight.writeMicroseconds(1490);
                     }
-                    else if (recvChar == 'a'){
+                    else if (recvChar == 's'){
                         //stop
                         servoLeft.writeMicroseconds(1500);         
                         servoRight.writeMicroseconds(1500);
